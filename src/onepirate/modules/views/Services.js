@@ -130,7 +130,7 @@ function Services(props) {
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
                 <Typography variant="h5">
-                  Dans le but d'avoir un plus grand impact, nous sommes à la recherche d'âme charitable partageant nos valeurs,
+                  Dans le but d'avoir une plus grande zone d'impacte, nous sommes à la recherche d'âme charitable partageant nos valeurs,
                   prêt à mettre leur temps à disposition pour nous accompagner dans cette aventure.
                 </Typography>
               </div>
