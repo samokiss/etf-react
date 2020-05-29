@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const styles = (theme) => ({
     root: {
@@ -26,8 +25,8 @@ const styles = (theme) => ({
             width: '50% !important',
         },
         [theme.breakpoints.down('xs')]: {
-            height: '60vh !important',
-            width: '80% !important',
+            height: '43vh !important',
+            width: '90% !important',
             margin: 'auto'
         },
         '&:hover': {
@@ -90,8 +89,6 @@ const styles = (theme) => ({
 
 function MoralValues(props) {
     const { classes } = props;
-    const matches = useMediaQuery('(min-width:960px)');
-
     const images = [
         {
             url:

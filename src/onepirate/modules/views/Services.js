@@ -76,7 +76,7 @@ function Services(props) {
                 Faire les courses
               </Typography>
               <Typography variant="h5" className={classes.text}>
-                Nous vous proposons de faire les courses pour vous dans un rayon de 10km
+                Nous vous proposons de faire les courses pour vous dans un rayon de 10km.
               </Typography>
             </div>
           </Grid>
@@ -88,10 +88,10 @@ function Services(props) {
                   alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Dons alimentaires
+                Banque alimentaire
               </Typography>
               <Typography variant="h5" className={classes.text}>
-                Nous Récoltons des produits alimentaires et/ou non-alimentaires qui ne sont plus utilisés mais sont encore en bon état pour les redistribuer aux nécessiteux
+                Nous mettons en relation des particuliers qui souhaitent effectuer des dons alimentaires avec les personnes qui en ont besoin.
               </Typography>
             </div>
           </Grid>
@@ -106,7 +106,7 @@ function Services(props) {
               Aide au devoir
               </Typography>
               <Typography variant="h5" className={classes.text}>
-                Nous vous proposons de faire de l'aide au devoir en ligne
+                Nous vous proposons de soutenir les élèves de primaire et collège à faire leurs devoirs en ligne.
               </Typography>
             </div>
           </Grid>
@@ -129,9 +129,8 @@ function Services(props) {
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <Typography variant="h5">
-                  Dans le but d'avoir une plus grande zone d'impacte, nous sommes à la recherche d'âme charitable partageant nos valeurs,
-                  prêt à mettre leur temps à disposition pour nous accompagner dans cette aventure.
+                <Typography variant="h5" style={{fontSize: '17px'}}>
+                  Dans le but d'avoir une plus grande zone d'impacte, nous sommes à la recherche d'âmes charitables partageant nos valeurs, prêt à mettre leur temps à disposition pour nous accompagner dans cette aventure. <span style={{fontWeight:'bold'}}>Alors exprime ta solidarité en donnant de ton temps pour ceux qui en ont besoin</span>.
                 </Typography>
               </div>
             </Grid>

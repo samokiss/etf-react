@@ -24,7 +24,7 @@ const styles = (theme) => ({
         backgroundColor: theme.palette.secondary.light,
         padding: theme.spacing(8, 3),
     }, cardContent: {
-        maxWidth: 500,
+        maxWidth: 600,
     }, textField: {
         width: '100%', marginTop: theme.spacing(1), marginBottom: theme.spacing(1),
     }, textFieldMessage: {
@@ -68,7 +68,7 @@ function ContactForm (props) {
             await fire.db.collection("Contacts").add({...values, date: new Date().toLocaleString()});
             console.log('success');
             setOpen(true);
-            setMessageSnackBar("Merci " + values.name + "! Votre message à bien été envoyé. Un email vous à également été envoyé à l'adresse suivante: \"" + values.email + "\". À très Bientôt");
+            setMessageSnackBar("Merci " + values.name + "! Votre message à bien été envoyé. Un email vous à également été envoyé à l'adresse suivante: \"" + values.email + "\". À très Bientôt!");
             return;
         }
 
@@ -121,13 +121,13 @@ function ContactForm (props) {
                             Contactez-nous
                         </Typography>
                         <Typography variant="h5" className={classes.subtitle}>
-                            Rentrez vos coordonnées, nous prendrons contact avec vous rapidement
+                            Rentrez vos coordonnées, nous prendrons contact avec vous rapidement.
                         </Typography>
                         <TextField error={nameError} helperText={nameHelperText} onChange={handleChange('name')} noBorder className={classes.textField} placeholder="Votre nom" value={values.name}/>
                         <TextField error={emailError} helperText={cityHelperText} onChange={handleChange('email')} noBorder className={classes.textField} placeholder="Votre email" value={values.email}/>
                         <TextField error={cityError} helperText={emailHelperText} onChange={handleChange('city')} noBorder className={classes.textField} placeholder="Votre Ville*" value={values.city}/>
                         <Typography className={classes.zone}>
-                            (*) notre zone d'intervention actuelle : <span style={{fontWeight: 'bold',}}>Clamart</span>, <span style={{fontWeight: 'bold'}}>Saint-Cyr-l'Ecole</span> et leur alentour
+                            (*) notre zone d'intervention actuelle : <span style={{fontWeight: 'bold',}}>Clamart</span>, <span style={{fontWeight: 'bold'}}>Saint-Cyr-l'Ecole</span> et leurs alentours.
                         </Typography>
                         <RadioGroup onChange={handleChange('service')} row aria-label="position" name="position" defaultValue="top" value={values.service}>
                             <FormControlLabel
@@ -143,15 +143,21 @@ function ContactForm (props) {
                                 labelPlacement="right"
                             />
                             <FormControlLabel
-                                value="Dons alimentaires"
+                                value="Aide au devoirs"
                                 control={<Radio color="primary"/>}
-                                label="Dons alimentaires"
+                                label="Aide au devoirs"
                                 labelPlacement="right"
                             />
                             <FormControlLabel
-                                value="Aide au devoir"
+                                value="Dons alimentaires"
                                 control={<Radio color="primary"/>}
-                                label="Aide au devoir"
+                                label="Faire un don alimentaire"
+                                labelPlacement="right"
+                            />
+                            <FormControlLabel
+                                value="Demande alimentaire"
+                                control={<Radio color="primary"/>}
+                                label="Je récolte des aliments"
                                 labelPlacement="right"
                             />
                         </RadioGroup>

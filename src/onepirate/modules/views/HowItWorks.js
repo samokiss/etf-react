@@ -14,7 +14,7 @@ const styles = (theme) => ({
   },
   container: {
     marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(15),
+    marginBottom: theme.spacing(8),
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
@@ -89,7 +89,7 @@ function HowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Vous exprimez votre besoin en prenant contact avec nous (en rentrant vos coordonnées dans le formulaire ci-dessous afin d’être recontacté)
+                  Vous exprimez votre besoin ou renseignez ce que vous souhaitez donner en prenant contact avec nous (en rentrant vos coordonnées dans le formulaire ci-dessous afin d’être recontacté).
                 </Typography>
               </div>
             </Grid>
@@ -102,7 +102,7 @@ function HowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Nous étudions la faisabilité de votre projet et vous recontactons afin de vous faire part des modalités d'exécution du service.
+                  Nous étudions la faisabilité de votre projet et vous recontactons afin de vous faire part des modalités d'exécution du service. Concernant les dons alimentaires, nous enregistrons votre promesse de don jusqu’à ce qu’un preneur se manifeste.
                 </Typography>
               </div>
             </Grid>

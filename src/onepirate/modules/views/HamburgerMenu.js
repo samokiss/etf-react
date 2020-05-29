@@ -107,7 +107,7 @@ export default function HamburgerMenu (matches) {
                 </IconButton>
             </div>
             <Divider/>
-            <MenuLink isMobile/>
+            <MenuLink isMobile open={open} handleDrawerClose={handleDrawerClose}/>
         </Drawer>
     </div>);
 }

@@ -1,21 +1,8 @@
-import React, { useLayoutEffect, useState }  from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-        function updateSize() {
-            setSize([window.innerWidth, window.innerHeight]);
-        }
-        window.addEventListener('resize', updateSize);
-        updateSize();
-        return () => window.removeEventListener('resize', updateSize);
-    }, []);
-
-    return size;
-}
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const styles = (theme) => ({
     root: {
@@ -26,6 +13,7 @@ const styles = (theme) => ({
         [theme.breakpoints.up('sm')]: {
             height: '80vh', minHeight: 500, maxHeight: 1300,
         },
+        overflow: 'hidden',
     }, container: {
         marginTop: theme.spacing(3),
         marginBottom: theme.spacing(14),
@@ -53,30 +41,28 @@ const styles = (theme) => ({
     }, arrowDown: {
         position: 'absolute', bottom: theme.spacing(4),
     }, hero: {
-        height: '100%'
+        height: '100%',
     }, bgvideo: {
         position: 'absolute',
-        right: '0',
-        bottom: '0',
+        top: '50%',
+        left: '50%',
         minWidth: '100%',
         minHeight: '100%',
-        // top: '50%',
-        // left: '50%',
-        // minWidth: '100%',
-        // minHeight: '100%',
-        // width: 'auto',
-        // height: 'auto',
-        zIndex: '-100', // msTransform: 'translateX(-50%) translateY(-50%)',
-        // mozTransform: 'translateX(-50%) translateY(-50%)',
-        // webkitTransform: 'translateX(-50%) translateY(-50%)',
-        // transform: 'translateX(-50%) translateY(-50%)',
-        // backgroundSize: 'cover',
+        width: 'auto',
+        height: 'auto',
+        zIndex: '-100',
+        msTransform: 'translateX(-50%) translateY(-50%)',
+        mozTransform: 'translateX(-50%) translateY(-50%)',
+        webkitTransform: 'translateX(-50%) translateY(-50%)',
+        transform: 'translateX(-50%) translateY(-50%)',
     }
 
 });
 
 function HeroLayout (props) {
     const {children, classes} = props;
+    const matches = useMediaQuery('(min-width:960px)');
+
 
     return (<section className={classes.root}>
         <Container className={classes.container}>

@@ -18,12 +18,12 @@ const styles = (theme) => ({
     '&:focus': {
       color: "#f00",
     },
-//     marginTop : matches
   },
 });
 
 function MenuLink(props) {
-  const { classes, isMobile } = props;
+  const { classes, isMobile, handleDrawerClose } = props;
+
   const preventDefault = (event) => event.preventDefault();
 
   return (
@@ -32,6 +32,7 @@ function MenuLink(props) {
             activeClass="active" to="Services" spy={true} smooth={true} offset={0} duration={500}
             className={classes.link}
             style={{marginTop:isMobile?'10px':'0px'}}
+            onClick={handleDrawerClose}
         >
           {'Services'}
         </Link>
@@ -39,6 +40,8 @@ function MenuLink(props) {
             activeClass="active" to="Volunteer" spy={true} smooth={true} offset={-100} duration={500}
             className={classes.link}
             style={{marginTop:isMobile?'10px':'0px'}}
+            onClick={handleDrawerClose}
+
         >
           {'Devenir bénévole'}
         </Link>
@@ -46,7 +49,7 @@ function MenuLink(props) {
             className={classes.link}
             style={{marginTop:isMobile?'15px':'0px'}}
             activeClass="active" to="Members" spy={true} smooth={true} offset={-80} duration={500}
-            onClick={preventDefault}
+            onClick={handleDrawerClose}
         >
           {"L'équipe"}
         </Link>
@@ -54,7 +57,7 @@ function MenuLink(props) {
             className={classes.link}
             style={{marginTop:isMobile?'10px':'0px'}}
             activeClass="active" to="MoralValues" spy={true} smooth={true} offset={-100} duration={500}
-
+            onClick={handleDrawerClose}
         >
           {'Nos valeurs'}
         </Link>
@@ -62,7 +65,7 @@ function MenuLink(props) {
             className={classes.link}
             style={{marginTop:isMobile?'10px':'0px'}}
             activeClass="active" to="HowItWorks" spy={true} smooth={true} offset={0} duration={500}
-            onClick={preventDefault}
+            onClick={handleDrawerClose}
         >
           {'Comment ça marche?'}
         </Link>
@@ -70,7 +73,7 @@ function MenuLink(props) {
             className={classes.link}
             style={{marginTop:isMobile?'10px':'0px'}}
             activeClass="active" to="ContactForm" spy={true} smooth={true} offset={-10} duration={500}
-            onClick={preventDefault}
+            onClick={handleDrawerClose}
         >
           {'Contactez-nous'}
         </Link>
