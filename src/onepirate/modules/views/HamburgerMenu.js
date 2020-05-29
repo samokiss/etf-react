@@ -11,6 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import MenuLink from './MenuLink';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 const drawerWidth = 240;
 
@@ -101,7 +102,13 @@ export default function HamburgerMenu (matches) {
             }}
         >
             <div className={classes.drawerHeader}>
-                <img className={classes.logo} src="/images/etf.png"/>
+                <Link
+                    activeClass="active" to="etf" spy={true} smooth={true} offset={-100} duration={500}
+                    className={classes.title}
+                    onClick={handleDrawerClose}
+                >
+                    <img className={classes.logo} src="/images/etf.png"/>
+                </Link>
                 <IconButton className={classes.arrow} onClick={handleDrawerClose}>
                     {theme.direction === 'ltr' ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
                 </IconButton>

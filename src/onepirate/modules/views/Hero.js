@@ -35,6 +35,7 @@ function Hero (props) {
             "Une plateforme créé par des jeunes chrétiens pour venir en aide à ceux qui en ont réellement besoin"
         </Typography>
         <Typography variant="body2" color="inherit" className={classes.more}>
+            Notre mission : manifester de l’amour au travers d’action simple.
         </Typography>
     </HeroLayout>);
 }

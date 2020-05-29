@@ -1,8 +1,7 @@
-import React, {useLayoutEffect, useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const styles = (theme) => ({
     root: {
@@ -61,10 +60,9 @@ const styles = (theme) => ({
 
 function HeroLayout (props) {
     const {children, classes} = props;
-    const matches = useMediaQuery('(min-width:960px)');
 
 
-    return (<section className={classes.root}>
+    return (<section className={classes.root} name="etf">
         <Container className={classes.container}>
             {children}
             <div className={classes.backdrop}/>

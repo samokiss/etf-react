@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
 import HamburgerMenu from "../views/HamburgerMenu";
 import MenuLink from "../views/MenuLink";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
 const styles = (theme) => ({
@@ -37,11 +37,8 @@ function Menu(props) {
   const menu = <AppBar position="fixed" style={{backgroundColor:'white'}}>
     <Toolbar className={classes.toolbar}>
       <Link
-          variant="h6"
-          underline="none"
-          color="inherit"
+          activeClass="active" to="etf" spy={true} smooth={true} offset={-100} duration={500}
           className={classes.title}
-          href="#"
       >
         <img className={classes.logo} src="/images/etf.png"/>
       </Link>
