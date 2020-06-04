@@ -130,7 +130,7 @@ function Services(props) {
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
                 <Typography variant="h5" style={{fontSize: '17px'}}>
-                  Dans le but d'avoir une plus grande zone d'impacte, nous sommes à la recherche d'âmes charitables partageant nos valeurs, prêt à mettre leur temps à disposition pour nous accompagner dans cette aventure. <span style={{fontWeight:'bold'}}>Alors exprime ta solidarité en donnant de ton temps pour ceux qui en ont besoin</span>.
+                  Dans le but d'avoir une plus grande zone d'impact, nous sommes à la recherche d'âmes charitables partageant nos valeurs, prêtes à mettre leur temps à disposition pour nous accompagner dans cette aventure. <span style={{fontWeight:'bold'}}>Alors exprime ta solidarité en donnant de ton temps pour ceux qui en ont besoin</span>.
                 </Typography>
               </div>
             </Grid>
