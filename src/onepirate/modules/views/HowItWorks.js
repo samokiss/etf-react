@@ -70,11 +70,6 @@ function HowItWorks(props) {
   return (
     <section className={classes.root} name="HowItWorks">
       <Container className={classes.container}>
-        <img
-          src="/static/themes/onepirate/productCurvyLines.png"
-          className={classes.curvyLines}
-          alt="curvy lines"
-        />
         <Typography variant="h4" marked="center" className={classes.title} component="h2">
           Comment ça marche ?
         </Typography>

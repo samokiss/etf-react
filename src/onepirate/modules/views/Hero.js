@@ -34,7 +34,7 @@ function Hero (props) {
             Exprime Ta Foi
         </Typography>
         <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-            "Une plateforme créé par des jeunes chrétiens pour venir en aide à ceux qui en ont réellement besoin"
+            "Une plateforme créée par des jeunes chrétiens pour venir en aide à ceux qui en ont réellement besoin"
         </Typography>
         <Typography variant="body2" color="inherit" className={classes.more}>
             <TransitionsModal />

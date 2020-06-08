@@ -11,6 +11,9 @@ import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
 import {fire} from '../../../firebase';
+import Checkbox from "@material-ui/core/Checkbox";
+import Link from "@material-ui/core/Link";
+import Popover from "@material-ui/core/Popover";
 
 
 const styles = (theme) => ({
@@ -35,18 +38,37 @@ const styles = (theme) => ({
         fontStyle: 'italic', fontSize: '13px',
     }, title: {
         marginBottom: theme.spacing(4),
-    }, subtitle:{
-        fontSize: '15px', marginBottom:10, align:'center'
-    }
+    }, subtitle: {
+        fontSize: '15px', marginBottom: 10, align: 'center'
+    }, link: {
+        fontStyle: 'italic', fontSize: '13px', color: '#d9442f',
+    }, cguText: {
+        fontSize: '13px',
+    }, typography: {
+        padding: theme.spacing(2),
+    },
 });
 
 function ContactForm (props) {
     const [values, setValues] = useState({
-                                             name: "", email: "", city: "", message: "", service: "Devenir bénévole",
+                                             name: "",
+                                             email: "",
+                                             city: "",
+                                             message: "",
+                                             service: "Devenir bénévole",
+                                             cgu: false,
                                          });
     const handleChange = (prop) => (event) => {
+        if ('cgu' === prop) {
+            setCgu(event.target.checked);
+            return;
+        }
         setValues({...values, [prop]: event.target.value});
     };
+
+    const {classes} = props;
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [cgu, setCgu] = useState(false);
 
     const [nameError, setNameError] = useState(false);
     const [nameHelperText, setNameHelperText] = useState(false);
@@ -59,16 +81,16 @@ function ContactForm (props) {
 
     const [messageSnackBar, setMessageSnackBar] = useState('');
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        validator();
-        if (values.name && values.email && values.city && values.message) {
+        validator(event);
+        if (values.name && values.email && values.city && values.message && cgu) {
             await fire.db.collection("Contacts").add({...values, date: new Date().toLocaleString()});
             console.log('success');
             setOpen(true);
-            setMessageSnackBar("Merci " + values.name + "! Votre message à bien été envoyé. Un email vous à également été envoyé à l'adresse suivante: \"" + values.email + "\". À très Bientôt!");
+            setMessageSnackBar("Merci " + values.name + "! Votre message a bien été envoyé. Un email vous sera également envoyé à l'adresse suivante: \"" + values.email + "\". À très Bientôt!");
             return;
         }
 
@@ -79,7 +101,11 @@ function ContactForm (props) {
         setOpen(false);
     };
 
-    const validator = () => {
+    const handleClosePop = () => {
+        setAnchorEl(null);
+    };
+
+    const validator = (event) => {
         if (!values.name) {
             setNameError(true);
             setNameHelperText('Veuillez rentrer un nom valide');
@@ -108,9 +134,21 @@ function ContactForm (props) {
             setMessageError(false);
             setMessageHelperText(false);
         }
+        if (!cgu) {
+            setAnchorEl(event.currentTarget);
+        }
     };
 
-    const {classes} = props;
+    const cguText = <span className={classes.cguText}>
+        En cochant cette case, je reconnais avoir pris connaissance des
+        <Link href="/CGU.pdf" className={classes.link}>
+            &nbsp;Conditions Générales d'Utilisation&nbsp;
+        </Link>
+         du site ainsi que sa Politique de Confidentialité et je les accepte.
+    </span>;
+
+    const openPop = Boolean(anchorEl);
+    const id = openPop ? 'simple-popover' : undefined;
 
     return (<Container className={classes.root} component="section" name="ContactForm">
         <Grid container>
@@ -162,6 +200,28 @@ function ContactForm (props) {
                             />
                         </RadioGroup>
                         <TextField error={messageError} helperText={messageHelperText} onChange={handleChange('message')} noBorder className={classes.textFieldMessage} multiline rows={4} placeholder="Votre message" value={values.message}/>
+                        <Popover
+                            id={id}
+                            open={openPop}
+                            anchorEl={anchorEl}
+                            onClose={handleClosePop}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'center',
+                            }}
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'center',
+                            }}
+                        >
+                            <Typography className={classes.typography}>Veuillez accepter les conditions générales d'utilisation</Typography>
+                        </Popover>
+                        <FormControlLabel
+                            control={
+                                <Checkbox id="checkbox" aria-describedby={id} checked={cgu} onChange={handleChange('cgu')} value={cgu}/>}
+                            label={cguText}
+                            style={{paddingBottom: '20px'}}
+                        />
                         <Button type="submit" color="primary" variant="contained" className={classes.button}>
                             Je prends contact
                         </Button>

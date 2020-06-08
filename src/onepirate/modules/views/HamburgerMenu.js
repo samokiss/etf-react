@@ -60,7 +60,6 @@ export default function HamburgerMenu (matches) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
-    console.log(matches);
 
 
     const handleDrawerOpen = () => {
