@@ -11,3 +11,7 @@
     opacity: 0.4;
     filter: alpha(opacity=40); /* msie */
 }
+
+.renseignement {
+    margin-top: 20px !important;
+}

@@ -8,7 +8,7 @@
     <title>ETF - Bible social</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet"/>
@@ -30,9 +30,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item"><a class="nav-link me-lg-3" href="#features">La Vision</a></li>
-                <li class="nav-item"><a class="nav-link me-lg-3" href="#presentation">Présentation</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#page-top">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Téléchargement</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#presentation">Présentation</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#features">La Vision</a></li>
             </ul>
             <!--
             <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
@@ -53,10 +54,15 @@
                 <!-- Mashead text and app badges-->
                 <div class="mb-5 mb-lg-0 text-center text-lg-start">
                     <h1 class="display-1 lh-1 mb-3">Découvrez votre nouvelle Bible sociale</h1>
-                    <p class="lead fw-normal text-muted mb-5">Pour être les premiers informés de la sortie de la version bêta de l'application et la tester en avant première ! Renseignez votre email !</p>
-                    <a href="https://docs.google.com/forms/d/1DM-OG4_OHsRTVZXp_P7yjs5lrpnKd-aIBWt9JBELplU/viewform?edit_requested=true">
+                    <p class="lead fw-normal text-muted mb-5">Pour être les premiers informés des prochaines évolutions de l'application ! Renseignez votre email !</p>
+                    <a href="assets/ExprimeTaFoi.apk">
                         <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
-                            <span class="d-flex align-items-center">Cliquez-ici pour renseigner votre email </span>
+                            <span class="d-flex align-items-center">Télécharger la version BETA pour Google</span>
+                        </button>
+                    </a>
+                    <a href="https://docs.google.com/forms/d/1DM-OG4_OHsRTVZXp_P7yjs5lrpnKd-aIBWt9JBELplU/viewform?edit_requested=true">
+                        <button class="btn btn-secondary rounded-pill px-3 mb-2 mb-lg-3 renseignement">
+                            <span class="d-flex align-items-center">Cliquez-ici être contacté pour la sortie officiel</span>
                         </button>
                     </a>
                 </div>
@@ -100,6 +106,36 @@
         </div>
     </div>
 </header>
+
+<!-- App badge section-->
+<section class="bg-gradient-primary-to-secondary" id="download">
+    <div class="container px-5">
+        <h2 class="text-center text-white font-alt mb-4">L'application sera bientôt disponible sur vos plateformes de téléchargement !</h2>
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center downloadPlatforms">
+            <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..."/></a>
+            <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..."/></a>
+        </div>
+    </div>
+</section>
+
+<!-- Basic features section-->
+<section class="bg-light" id="presentation">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+            <div class="col-12 col-lg-5">
+                <h2 class="display-4 lh-1 mb-4">Tirez le meilleur de votre nouvelle application</h2>
+                <p class="lead fw-normal text-muted mb-5 mb-lg-0">Cette application a pour vocation de vous faire bénéficier du meilleur d'un réseau social autour de la parole de Dieu. Partagez avec vos amis les versets qui vous ont marqué lors de vos réunions dominicale. Démarrez des temps de communion fraternelle même lorsque vous n'êtes pas réunis. Avec votre nouvel outil, en plus de vos réunions d'église et de vos temps de communion habituelle, vous êtes assurés de bénéficiez de temps édifiants et de qualité sur votre nouveau réseau social.</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="px-10 px-sm-0">
+                    <video controls muted="" autoplay="" loop="" style="max-width: 100%; height: 100%">
+                        <source src="assets/video/videopresentation.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- App features section-->
 <section id="features">
@@ -194,35 +230,8 @@
         </div>
     </div>
 </section>
-<!-- Basic features section-->
-<section class="bg-light" id="presentation">
-    <div class="container px-5">
-        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-            <div class="col-12 col-lg-5">
-                <h2 class="display-4 lh-1 mb-4">Tirez le meilleur de votre nouvelle application</h2>
-                <p class="lead fw-normal text-muted mb-5 mb-lg-0">Cette application a pour vocation de vous faire bénéficier du meilleur d'un réseau social autour de la parole de Dieu. Partagez avec vos amis les versets qui vous ont marqué lors de vos réunions dominicale. Démarrez des temps de communion fraternelle même lorsque vous n'êtes pas réunis. Avec votre nouvel outil, en plus de vos réunions d'église et de vos temps de communion habituelle, vous êtes assurés de bénéficiez de temps édifiants et de qualité sur votre nouveau réseau social.</p>
-            </div>
-            <div class="col-sm-8 col-md-6">
-                <div class="px-5 px-sm-0">
-                    <video controls muted="" autoplay="" loop="" style="max-width: 100%; height: 100%">
-                        <source src="assets/video/videopresentation.mp4" type="video/mp4"/>
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- App badge section-->
-<section class="bg-gradient-primary-to-secondary" id="download">
-    <div class="container px-5">
-        <h2 class="text-center text-white font-alt mb-4">L'application sera bientôt disponible sur vos plateformes de téléchargement !</h2>
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center downloadPlatforms">
-            <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..."/></a>
-            <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..."/></a>
-        </div>
-    </div>
-</section>
+
 <!-- Footer-->
 <footer class="bg-black text-center py-5">
     <div class="container px-5">
