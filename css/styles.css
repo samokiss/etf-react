@@ -4034,8 +4034,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /*padding-top: 0.5rem;
+  padding-bottom: 0.5rem;*/
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11321,8 +11321,8 @@ section {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /*padding-top: 1rem;
+  padding-bottom: 1rem;*/
   background-color: #fff;
 }
 #mainNav .navbar-brand {
