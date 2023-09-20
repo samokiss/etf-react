@@ -4,10 +4,14 @@
 
 .social-icon {
     color: white;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .downloadPlatforms {
     opacity: 0.4;
     filter: alpha(opacity=40); /* msie */
+}
+
+.mr-8 {
+    margin-right: 8px;
 }
