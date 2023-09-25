@@ -15,3 +15,13 @@
 .mr-8 {
     margin-right: 8px;
 }
+
+.verse {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Cardo;
+}
+
+.front {
+    color: #f77b72;
+}
