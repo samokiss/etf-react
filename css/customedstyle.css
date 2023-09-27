@@ -24,4 +24,9 @@
 
 .front {
     color: #f77b72;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #f83932;
 }

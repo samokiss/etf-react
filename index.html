@@ -39,14 +39,6 @@
                 <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Fonctionnalités</a></li>
                 <li class="nav-item"><a class="nav-link me-lg-3" href="#vision">Notre but</a></li>
             </ul>
-            <!--
-            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                <span class="d-flex align-items-center">
-                    <i class="bi-chat-text-fill me-2"></i>
-                    <span class="small"></span>
-                </span>
-            </button>
-            -->
         </div>
     </div>
 </nav>
@@ -59,23 +51,25 @@
                 <div class="mb-5 mb-lg-0 text-center text-lg-start">
                     <h1 class="display-4 lh-1 mb-3">Découvrez votre nouvelle Bible sociale</h1>
                     <p class="lead fw-normal text-muted mb-5">Parce que
-                        <b>la Parole se vit ensemble</b>, partagez les versets qui vous inspirent,
+                        <span class="front">la Parole se vit ensemble</span>, partagez les versets qui vous inspirent,
                         suivez vos amis pour découvrir leurs réflexions, commentez et réagissez. <br><br>
                         De Paris, Kinshasa ou Bali, avec ou sans église et par toutes les nations, restons
-                        connecté.es...un réseau social qui met <b>la Parole au centre</b>. <br><br>
+                        connecté.es...un réseau social qui met <span class="front">la Parole au centre</span>. <br><br>
                         <span class="verse">"Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres."<br>
-                            1 Jean 4:11</span>
+                            <span class="front">1 Jean 4:11</span></span>
                     </p>
-                    <!--                    <a href="https://docs.google.com/forms/d/1DM-OG4_OHsRTVZXp_P7yjs5lrpnKd-aIBWt9JBELplU/viewform?edit_requested=true">-->
-                    <!--                        <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">-->
-                    <!--                            <span class="d-flex align-items-center">Télécharger la version BETA sur le PlayStore </span>-->
-                    <!--                        </button>-->
-                    <!--                    </a>-->
-                    <a href="assets/app-release.apk">
-                        <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
-                            <span class="d-flex align-items-center">Télécharger la version BETA Android</span>
-                        </button>
-                    </a>
+                    <div class="d-flex flex-column flex-lg-row align-items-center">
+                        <a href="assets/app-release.apk" class="mr-8">
+                            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                                <span class="d-flex align-items-center">Télécharger la version <br>BETA Android</span>
+                            </button>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/1DM-OG4_OHsRTVZXp_P7yjs5lrpnKd-aIBWt9JBELplU/viewform?edit_requested=true">
+                            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                                <span class="d-flex align-items-center">S'inscrire pour tester la version <br>BETA iOS</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -100,10 +94,6 @@
                     <div class="device-wrapper">
                         <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                             <div class="screen bg-black">
-                                <!-- PUT CONTENTS HERE:-->
-                                <!-- * * This can be a video, image, or just about anything else.-->
-                                <!-- * * Set the max width of your media to 100% and the height to-->
-                                <!-- * * 100% like the demo example below.-->
                                 <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
                                     <source src="assets/video/profil_compresse.mp4" type="video/mp4"/>
                                 </video>
@@ -136,7 +126,7 @@
                 <p class="lead fw-normal text-muted mb-3"> Partagez avec vos amis les versets qui vous ont marqué lors de vos réunions dominicale. Démarrez des temps de <span class="front">communion fraternelle</span> même lorsque vous n'êtes pas réunis. </p>
                 <p class="lead fw-normal text-muted mb-3"> Avec votre nouvel outil, en plus de vos réunions d'église et de vos temps de communion habituelle, vous êtes assurés de bénéficiez de <span class="front">temps édifiants et de qualité</span> sur votre nouveau réseau social.</p>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="px-10 px-sm-0">
                     <video controls muted="" autoplay="" loop="" style="max-width: 100%; height: 100%">
                         <source src="assets/video/videopresentation.mp4" type="video/mp4"/>
@@ -151,7 +141,7 @@
 <section id="communion">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-            <div class="col-12 col-lg-6">
+            <div class="col-6 col-lg-6">
                 <!-- <div class="px-10 px-sm-0"> -->
                 <img style="max-width: 100%; height: 100%" src="assets/img/hashtag-centered.png"/>
             </div>
@@ -159,11 +149,11 @@
                 <h2 class="display-5 lh-1 mb-4">Une communion 2.0 boostée par les tags</h2>
                 <p class="lead fw-normal text-muted mb-2 mb-lg-0">Les <span class="front">tags</span> occupent une place importante sur tous les réseaux sociaux, car ils permettent aux utilisateurs de <span class="front">créer et de rechercher facilement</span> des publications par thématique. </p>
                 <br>
-                <h4>Surlignez vos versets par thématique et créez vos propres tags.</h4>
+                <h4>Suivez les thématique du moment à l’aide des tags et partager votre pensée du jour avec votre communauté.</h4>
                 <br>
                 <p class="lead fw-normal text-muted mb-2 mb-lg-0">Nous avons intégré le concept des tags dans l'application pour <span class="front">dynamiser vos moments de communion fraternelle</span> ainsi que vos <span class="front">méditations personnelles</span>. Vous pourrez surligner vos versets favoris en utilisant les thèmes prédéfinis ou créer vos propres tags afin <span class="front">d'édifier votre votre communauté</span>.
                     <br><br>
-                    De plus, vous pouvez utiliser <span class="front">la fonction de recherche</span> pour trouver le <span class="front">contenu créé par votre communauté</span> autour d'un tag.
+                    Quel que soit votre utilisation de la Bible, les tags vous permettront de rechercher et retrouver rapidement tous le <span class="front">contenu créé par votre communauté</span> autour d'une thématique.
                 </p>
             </div>
         </div>
@@ -248,10 +238,6 @@
                     <div class="device-wrapper">
                         <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                             <div class="screen bg-black">
-                                <!-- PUT CONTENTS HERE:-->
-                                <!-- * * This can be a video, image, or just about anything else.-->
-                                <!-- * * Set the max width of your media to 100% and the height to-->
-                                <!-- * * 100% like the demo example below.-->
                                 <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
                                     <source src="assets/video/surligner_compresse.mp4" type="video/mp4"/>
                                 </video>
@@ -261,10 +247,6 @@
                 </div>
             </div>
         </div>
-        <!--        <br>-->
-        <!--                    <br>-->
-        <!--                    <p class="text-center">Nous recevons <span style="color:brown;">JESUS</span>, nous devenons un enfant unique de Dieu. Nous évoluons en membre de son <span style="color:brown;">EGLISE</span>. C’est dans la rencontre avec l’autre, dans les révélations qu’Il manifeste personnellement en chacun, que Dieu nous révèle tous les autres membres de ce corps parfait en Christ par sa <span style="color:brown;">PAROLE</span>.-->
-        <!--                    <br><span class="text-center"><img src="assets/img/bible.png" width="10%" alt="..."/></span></p>-->
     </div>
 </section>
 
@@ -275,7 +257,7 @@
             <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
                 <div class="container-fluid px-5">
                     <h1 class="text-center"> Notre but </h1>
-                    <p class="text-center">Stimuler la foi et la créativité au sein de la communauté pour puisse librement d'exprimer, dans le but de :</p>
+                    <p class="text-center">Stimuler la foi et la créativité au sein de la communauté pour qu'elle puisse librement s'exprimer, dans le but de :</p>
                     <br>
                 </div>
                 <div class="row gx-5">
@@ -311,7 +293,7 @@
                                 recevoir <br/>
                             </h3>
                             <hr>
-                            <p class="text-muted mb-0">Guider et être guidé par la soif de semer et d’être une source de bénédictions<br><span class="hashtag">#partage#exhortation</span>
+                            <p class="text-muted mb-0">Guider et être guidé.es par la soif de semer et d’être une source de bénédictions<br><span class="hashtag">#partage#exhortation</span>
                             </p>
                         </div>
                     </div>
@@ -362,7 +344,7 @@
                                     <a href="https://forms.gle/pgXW2Fsm3nSXPL2AA">Devenir bénévole</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content"><a href="#.">Faire un don</a></div>
+                                <div class="thumb-content"><a href="https://www.helloasso.com/associations/exprime-ta-foi/collectes/lancement-de-la-start-up-exprimetafoi">Faire un don</a></div>
                             </li>
                             <li>
                                 <div class="thumb-content"><a href="assets/CGU%20Bible%20Sociale%20ETF.pdf">Conditions générales d'utilisation</a></div>
