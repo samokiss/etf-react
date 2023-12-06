@@ -8,8 +8,8 @@
 }
 
 .downloadPlatforms {
-    /*opacity: 0.4;*/
-    /*filter: alpha(opacity=40); !* msie *!*/
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
 }
 
 .mr-8 {
