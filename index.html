@@ -3,234 +3,222 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="Exprime Ta Foi — la Bible sociale. Partagez les versets qui vous inspirent, suivez vos amis, commentez et réagissez."/>
+    <meta name="description" content="Exprime Ta Foi — la Bible sociale. La Parole se vit ensemble."/>
     <meta name="author" content="Exprime Ta Foi"/>
     <title>ETF - Bible sociale</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
-    <!-- Bootstrap (navbar + utilitaires conservés) -->
+    <!-- Bootstrap limité à la navbar mobile -->
     <link href="css/styles.css" rel="stylesheet"/>
-    <!-- Design Apple landing (index.html uniquement) -->
+    <!-- Clone Apple (index.html uniquement) -->
     <link href="css/landing.css" rel="stylesheet"/>
 </head>
 <body id="page-top" class="index-fx">
 
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container fx-nav-inner">
-        <a href="/"><img class="fx-logo" src="assets/img/etf.png" alt="Exprime Ta Foi"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<!-- ============ NAV fine sombre sticky ============ -->
+<nav class="fx-nav" id="mainNav">
+    <div class="fx-nav-inner">
+        <a href="#page-top"><img class="fx-nav-logo" src="assets/img/etf.png" alt="Exprime Ta Foi"/></a>
+        <div class="fx-nav-links">
+            <a href="#features">Fonctionnalités</a>
+            <a href="#communaute">Communauté</a>
+            <a href="#specs">Gratuit</a>
+            <a class="fx-nav-cta" href="#telecharger">Télécharger</a>
+        </div>
+        <button class="fx-nav-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Menu">
             <i class="bi-list"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#page-top">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
-                <li class="nav-item"><a class="nav-link" href="#vision">Notre but</a></li>
-                <li class="nav-item"><a class="nav-link fx-nav-cta" href="#download">Télécharger</a></li>
-            </ul>
-        </div>
+    </div>
+    <div class="collapse fx-nav-collapse" id="navbarResponsive">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#communaute">Communauté</a>
+        <a href="#specs">Gratuit</a>
+        <a href="#telecharger">Télécharger</a>
     </div>
 </nav>
 
-<!-- ================= HERO ================= -->
+<!-- ============ HERO : titre géant centré + visuel produit ============ -->
 <header class="fx-hero" id="logo">
-    <div class="fx-hero-inner">
-        <div class="fx-hero-copy">
-            <div class="fx-badge" data-hero="0" data-reveal>Gratuit · Sans pub</div>
-            <h1 class="fx-hero-title" data-hero="1" data-reveal>
-                Découvrez votre nouvelle <span class="fx-gradient">Bible sociale.</span>
-            </h1>
-            <p class="fx-hero-sub" data-hero="2" data-reveal>
-                Parce que <strong>la Parole se vit ensemble</strong>, partagez les versets qui vous
-                inspirent, suivez vos amis, commentez et réagissez. De Paris, Kinshasa ou Bali,
-                un réseau social qui met <strong>la Parole au centre</strong>.
-            </p>
-            <div class="fx-hero-ctas" data-hero="3" data-reveal>
-                <a href="#download" class="fx-btn fx-btn-primary">Télécharger l'app</a>
-                <a href="#features" class="fx-btn fx-btn-ghost">Découvrir</a>
-            </div>
-            <p class="fx-verse" data-hero="4" data-reveal>
-                <span class="fx-verse-text" data-typing="« Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres. »">"Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres."</span><br>
-                <span class="fx-verse-ref">1 Jean 4:11</span>
-            </p>
-        </div>
-        <div class="fx-hero-device" data-parallax="0.08">
-            <div class="fx-phone">
-                <div class="fx-phone-notch"></div>
-                <video muted="muted" autoplay="" loop="" playsinline="">
-                    <source src="assets/video/profil_compresse.mp4" type="video/mp4"/>
-                </video>
-            </div>
+    <p class="fx-eyebrow" data-hero="0" data-reveal>Nouveau</p>
+    <h1 class="fx-hero-title" data-hero="1" data-reveal>
+        La Bible<br><span class="fx-gradient">sociale.</span>
+    </h1>
+    <p class="fx-hero-sub" data-hero="2" data-reveal>
+        La Parole se vit ensemble.
+        <span class="fx-verse-line"><span data-typing="« Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres. » — 1 Jean 4:11">"Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres." — 1 Jean 4:11</span></span>
+    </p>
+    <div class="fx-hero-ctas" data-hero="3" data-reveal>
+        <a href="#telecharger" class="fx-link-cta">Télécharger <i class="bi-chevron-right"></i></a>
+        <a href="#features" class="fx-link-cta">En savoir plus <i class="bi-chevron-right"></i></a>
+    </div>
+    <div class="fx-hero-visual" data-parallax="0.06">
+        <div class="fx-phone">
+            <div class="fx-phone-notch"></div>
+            <video muted="muted" autoplay="" loop="" playsinline="">
+                <source src="assets/video/profil_compresse.mp4" type="video/mp4"/>
+            </video>
         </div>
     </div>
 </header>
 
-<!-- ================= DOWNLOAD ================= -->
-<section class="fx-download" id="download">
-    <div class="container">
-        <h2 class="fx-download-title" data-reveal>Disponible maintenant.</h2>
-        <p class="fx-download-sub" data-reveal data-reveal-delay="100">
-            L'application est disponible sur vos plateformes de téléchargement.
+<!-- ============ SECTION 1 (claire) : présentation ============ -->
+<section class="fx-section fx-light" id="presentation">
+    <div class="fx-section-head">
+        <h2 class="fx-h2" data-reveal>Tirez le meilleur<br>de votre application.</h2>
+        <p class="fx-lead" data-reveal data-reveal-delay="120">
+            Un réseau social centré sur la Parole.
+            Partagez. Commentez. Grandissez.
         </p>
-        <div class="fx-badges" data-reveal data-reveal-delay="200">
-            <a href="https://play.google.com/store/apps/details?id=com.exprimetafoi.exprimetafoi"><img class="fx-store-badge" src="assets/img/google-play-badge.svg" alt="Google Play"/></a>
-            <a href="https://apps.apple.com/app/id6459265531"><img class="fx-store-badge" src="assets/img/app-store-badge.svg" alt="App Store"/></a>
-        </div>
+    </div>
+    <div class="fx-visual-wide" data-parallax="0.05">
+        <video muted="muted" autoplay="" loop="" playsinline="">
+            <source src="assets/video/videopresentation.mp4" type="video/mp4"/>
+        </video>
     </div>
 </section>
 
-<!-- ================= PRESENTATION ================= -->
-<section class="fx-section" id="presentation">
-    <div class="container">
-        <div class="fx-row">
-            <div class="fx-row-copy">
-                <h2 class="fx-h2" data-reveal>Tirez le meilleur de votre nouvelle application.</h2>
-                <p data-reveal data-reveal-delay="100">Un <strong class="fx-red">réseau social autour de la parole de Dieu</strong>.</p>
-                <p data-reveal data-reveal-delay="180">Partagez les versets qui vous ont marqués. Démarrez des temps de <strong class="fx-red">communion fraternelle</strong>, même à distance.</p>
-                <p data-reveal data-reveal-delay="260">Des <strong class="fx-red">temps édifiants et de qualité</strong>, au-delà de vos réunions habituelles.</p>
-            </div>
-            <div class="fx-row-media" data-parallax="0.06">
-                <video controls muted="muted" autoplay="" loop="" playsinline="">
-                    <source src="assets/video/videopresentation.mp4" type="video/mp4"/>
-                </video>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= COMMUNION ================= -->
-<section class="fx-section fx-section-tint" id="communion">
-    <div class="container">
-        <div class="fx-row fx-row-flip">
-            <div class="fx-row-media" data-parallax="0.07">
-                <img src="assets/img/hashtag-centered.png" alt="Tags Exprime Ta Foi"/>
-            </div>
-            <div class="fx-row-copy">
-                <h2 class="fx-h2" data-reveal>Une communion 2.0 boostée par les tags.</h2>
-                <p data-reveal data-reveal-delay="100">Les tags permettent de <strong class="fx-red">créer et de rechercher facilement</strong> des publications par thématique.</p>
-                <p data-reveal data-reveal-delay="180">Surlignez vos versets favoris avec les thèmes prédéfinis ou créez vos propres tags pour <strong class="fx-red">édifier votre communauté</strong>.</p>
-                <p data-reveal data-reveal-delay="260">Retrouvez rapidement tout le <strong class="fx-red">contenu créé par votre communauté</strong> autour d'une thématique.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= FEATURES ================= -->
-<section class="fx-section" id="features">
-    <div class="container">
-        <h2 class="fx-h2 fx-center" data-reveal>Les fonctionnalités.</h2>
-        <p class="fx-lead-center" data-reveal data-reveal-delay="100">Quatre façons simples de vivre la Parole au quotidien.</p>
-
-        <div class="fx-feature">
-            <div class="fx-feature-icon" data-reveal><img src="assets/img/surligner.png" alt=""/></div>
-            <div class="fx-feature-copy" data-reveal data-reveal-delay="120">
-                <h3>Surligner.</h3>
-                <p>Explorez les passages selon différentes thématiques et mettez en valeur vos versets “phare”.</p>
-                <span class="fx-hashtags">#Partage #Exhortation</span>
-            </div>
-        </div>
-
-        <div class="fx-feature fx-feature-flip">
-            <div class="fx-feature-icon" data-reveal><img src="assets/img/hashtag.png" alt=""/></div>
-            <div class="fx-feature-copy" data-reveal data-reveal-delay="120">
-                <h3>Utiliser les tags.</h3>
-                <p>Organisez votre lecture et explorez les tendances du moment à l'aide des tags.</p>
-                <span class="fx-hashtags">#Communaute #Parole #Croissance</span>
-            </div>
-        </div>
-
-        <div class="fx-feature">
-            <div class="fx-feature-icon" data-reveal><img src="assets/img/commenter.png" alt=""/></div>
-            <div class="fx-feature-copy" data-reveal data-reveal-delay="120">
-                <h3>Commenter et Liker.</h3>
-                <p>Partagez une pensée inspirée, posez des questions et mettez en valeur les réponses qui vous inspirent.</p>
-                <span class="fx-hashtags">#Communion #Amour #LaParole</span>
-            </div>
-        </div>
-
-        <div class="fx-feature fx-feature-flip">
-            <div class="fx-feature-icon" data-reveal><img src="assets/img/abonner.png" alt=""/></div>
-            <div class="fx-feature-copy" data-reveal data-reveal-delay="120">
-                <h3>S'abonner.</h3>
-                <p>Amis proches ou du bout du monde, expérimentez la communion fraternelle sans frontière.</p>
-                <span class="fx-hashtags">#JésusNotreSource #PlanDeDieu</span>
-            </div>
-        </div>
-
-        <div class="fx-feature-media" data-parallax="0.05">
-            <video muted="muted" autoplay="" loop="" playsinline="">
-                <source src="assets/video/surligner_compresse.mp4" type="video/mp4"/>
-            </video>
-        </div>
-    </div>
-</section>
-
-<!-- ================= VISION ================= -->
-<section class="fx-section fx-section-dark" id="vision">
-    <div class="container">
-        <h2 class="fx-h2 fx-center" data-reveal>Notre but.</h2>
-        <p class="fx-lead-center" data-reveal data-reveal-delay="100">
-            Stimuler la foi et la créativité au sein de la communauté pour qu'elle puisse librement s'exprimer.
+<!-- ============ SECTION 2 (sombre) : communauté / tags ============ -->
+<section class="fx-section fx-dark" id="communaute">
+    <div class="fx-section-head">
+        <h2 class="fx-h2" data-reveal>Une communion 2.0.</h2>
+        <p class="fx-lead" data-reveal data-reveal-delay="120">
+            Surlignez vos versets. Créez vos tags.
+            Retrouvez toute votre communauté par thématique.
         </p>
-        <div class="fx-vision-grid">
-            <div class="fx-vision-item" data-reveal>
-                <img src="assets/img/communion2.jpg" alt=""/>
-                <h3>Favoriser la communion fraternelle.</h3>
-                <p>Développer une communion vivante et centrée sur la Parole.</p>
-                <span class="fx-hashtags">#Communion #Amour #LaParole</span>
-            </div>
-            <div class="fx-vision-item" data-reveal data-reveal-delay="120">
-                <img src="assets/img/oeuvrerEnsemble.jpg" alt=""/>
-                <h3>Encourager l'émergence des talents.</h3>
-                <p>Soutenir les chrétiens dans l'expression créative de leur foi.</p>
-                <span class="fx-hashtags">#JésusNotreSource #PlanDeDieu</span>
-            </div>
-            <div class="fx-vision-item" data-reveal data-reveal-delay="240">
-                <img src="assets/img/corporate-goals.jpg" alt=""/>
-                <h3>Donner et recevoir.</h3>
-                <p>Guider et être guidés par la soif de semer et d'être une source de bénédictions.</p>
-                <span class="fx-hashtags">#Partage #Exhortation</span>
-            </div>
-            <div class="fx-vision-item" data-reveal data-reveal-delay="360">
-                <img src="assets/img/woman.jpg" alt=""/>
-                <h3>Se connecter et grandir ensemble.</h3>
-                <p>Une communauté connectée, soudée et motivée par la parole de Dieu.</p>
-                <span class="fx-hashtags">#Communaute #Parole #Croissance</span>
-            </div>
-        </div>
+    </div>
+    <div class="fx-visual-wide" data-parallax="0.05">
+        <img src="assets/img/hashtag-centered.png" alt="Tags Exprime Ta Foi"/>
     </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- ============ SECTION 3 (claire) : fonctionnalités ============ -->
+<section class="fx-section fx-light" id="features">
+    <div class="fx-section-head">
+        <h2 class="fx-h2" data-reveal>Des outils pensés<br>pour ta vie spirituelle.</h2>
+    </div>
+
+    <div class="fx-feature">
+        <div class="fx-feature-copy" data-reveal>
+            <h3>Surligner.</h3>
+            <p>Explorez les passages par thématique. Marquez vos versets “phare”.</p>
+            <span class="fx-tags">#Partage #Exhortation</span>
+        </div>
+        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
+            <img src="assets/img/surligner.png" alt="Surligner"/>
+        </div>
+    </div>
+
+    <div class="fx-feature fx-flip">
+        <div class="fx-feature-copy" data-reveal>
+            <h3>Utiliser les tags.</h3>
+            <p>Organisez votre lecture. Suivez les tendances du moment.</p>
+            <span class="fx-tags">#Communaute #Parole #Croissance</span>
+        </div>
+        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
+            <img src="assets/img/hashtag.png" alt="Tags"/>
+        </div>
+    </div>
+
+    <div class="fx-feature">
+        <div class="fx-feature-copy" data-reveal>
+            <h3>Commenter. Liker.</h3>
+            <p>Partagez une pensée inspirée. Mettez en valeur les réponses qui vous touchent.</p>
+            <span class="fx-tags">#Communion #Amour #LaParole</span>
+        </div>
+        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
+            <img src="assets/img/commenter.png" alt="Commenter"/>
+        </div>
+    </div>
+
+    <div class="fx-feature fx-flip">
+        <div class="fx-feature-copy" data-reveal>
+            <h3>S'abonner.</h3>
+            <p>Du voisin au bout du monde : la communion fraternelle sans frontière.</p>
+            <span class="fx-tags">#JésusNotreSource #PlanDeDieu</span>
+        </div>
+        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
+            <img src="assets/img/abonner.png" alt="S'abonner"/>
+        </div>
+    </div>
+
+    <div class="fx-visual-device" data-parallax="0.04">
+        <video muted="muted" autoplay="" loop="" playsinline="">
+            <source src="assets/video/surligner_compresse.mp4" type="video/mp4"/>
+        </video>
+    </div>
+</section>
+
+<!-- ============ SECTION SPECS (sombre) : grille chiffres ============ -->
+<section class="fx-section fx-dark" id="specs">
+    <div class="fx-section-head">
+        <h2 class="fx-h2" data-reveal>Gratuit. Sans pub.<br>Pour tous.</h2>
+        <p class="fx-lead" data-reveal data-reveal-delay="120">Stimuler la foi et la créativité de la communauté, partout dans le monde.</p>
+    </div>
+    <div class="fx-specs">
+        <div class="fx-spec" data-reveal>
+            <div class="fx-spec-value">0 €</div>
+            <div class="fx-spec-label">Gratuit, vraiment</div>
+        </div>
+        <div class="fx-spec" data-reveal data-reveal-delay="100">
+            <div class="fx-spec-value">0 pub</div>
+            <div class="fx-spec-label">Ni traceurs, ni distraction</div>
+        </div>
+        <div class="fx-spec" data-reveal data-reveal-delay="200">
+            <div class="fx-spec-value">2</div>
+            <div class="fx-spec-label">Plateformes : iOS & Android</div>
+        </div>
+        <div class="fx-spec" data-reveal data-reveal-delay="300">
+            <div class="fx-spec-value">∞</div>
+            <div class="fx-spec-label">Communion sans frontière</div>
+        </div>
+    </div>
+    <div class="fx-vision" data-reveal data-reveal-delay="150">
+        <div><img src="assets/img/communion2.jpg" alt=""/><h3>Communion fraternelle</h3><p>Vivante et centrée sur la Parole.</p></div>
+        <div><img src="assets/img/oeuvrerEnsemble.jpg" alt=""/><h3>Talents émergents</h3><p>L'expression créative de la foi encouragée.</p></div>
+        <div><img src="assets/img/corporate-goals.jpg" alt=""/><h3>Donner &amp; recevoir</h3><p>Semer, et être une source de bénédictions.</p></div>
+        <div><img src="assets/img/woman.jpg" alt=""/><h3>Grandir ensemble</h3><p>Une communauté soudée par la Parole.</p></div>
+    </div>
+</section>
+
+<!-- ============ CTA FINAL (sombre) ============ -->
+<section class="fx-final" id="telecharger">
+    <h2 class="fx-final-title" data-reveal>Téléchargez ETF.</h2>
+    <p class="fx-final-sub" data-reveal data-reveal-delay="100">Disponible maintenant sur votre téléphone.</p>
+    <div class="fx-final-badges" data-reveal data-reveal-delay="200">
+        <a href="https://play.google.com/store/apps/details?id=com.exprimetafoi.exprimetafoi"><img class="fx-store-badge" src="assets/img/google-play-badge.svg" alt="Google Play"/></a>
+        <a href="https://apps.apple.com/app/id6459265531"><img class="fx-store-badge" src="assets/img/app-store-badge.svg" alt="App Store"/></a>
+    </div>
+    <div class="fx-final-qr" data-reveal data-reveal-delay="300">
+        <img src="assets/img/qrcode.png" alt="QR code de téléchargement"/>
+        <p>Scannez pour télécharger</p>
+    </div>
+</section>
+
+<!-- ============ FOOTER fin ============ -->
 <footer class="fx-footer">
-    <div class="container">
+    <div class="fx-footer-inner">
+        <div class="fx-footer-links">
+            <a href="about-us.html">À propos</a>
+            <a href="https://forms.gle/pgXW2Fsm3nSXPL2AA">Bénévolat</a>
+            <a href="https://www.helloasso.com/associations/exprime-ta-foi/collectes/lancement-de-la-start-up-exprimetafoi">Faire un don</a>
+            <a href="ETF_CGU.html">CGU</a>
+            <a href="ETF_Politique_de_confidentialite.html">Confidentialité</a>
+            <a href="mailto:contact@exprimetafoi.com">Contact</a>
+        </div>
         <div class="fx-footer-social">
             <a href="https://www.facebook.com/exprimetafoi" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/exprimetafoi/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="https://twitter.com/exprimetafoi/" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.youtube.com/@exprimetafoi2943" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
-        <div class="fx-footer-links">
-            <a href="about-us.html">À propos du ministère</a>
-            <a href="https://forms.gle/pgXW2Fsm3nSXPL2AA">Devenir bénévole</a>
-            <a href="https://www.helloasso.com/associations/exprime-ta-foi/collectes/lancement-de-la-start-up-exprimetafoi">Faire un don</a>
-            <a href="ETF_CGU.html">CGU</a>
-            <a href="ETF_Politique_de_confidentialite.html">Confidentialité</a>
-            <a href="mailto:contact@exprimetafoi.com">Nous contacter</a>
-        </div>
-        <p class="fx-footer-tagline">Vivre une nouvelle communion avec Dieu et avec les Hommes au travers de Jésus-Christ</p>
-        <p class="fx-footer-copy">&copy; Exprime Ta Foi. Tous droits réservés</p>
+        <p class="fx-footer-note">Vivre une nouvelle communion avec Dieu et avec les Hommes au travers de Jésus-Christ.</p>
+        <p class="fx-footer-copy">Copyright © 2024 Exprime Ta Foi. Tous droits réservés.</p>
     </div>
 </footer>
 
-<!-- Bootstrap bundle (navbar mobile) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Effets Apple (landing uniquement) -->
 <script src="js/landing-effects.js"></script>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYXM8TF1DF"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
