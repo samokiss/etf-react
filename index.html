@@ -1,229 +1,642 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="Exprime Ta Foi — la Bible sociale. La Parole se vit ensemble."/>
-    <meta name="author" content="Exprime Ta Foi"/>
-    <title>ETF - Bible sociale</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <!-- 100% dédié landing (zéro Bootstrap) : index.html uniquement -->
-    <link href="css/landing.css" rel="stylesheet"/>
-</head>
-<body id="page-top" class="index-fx">
-
-<!-- ============ NAV fine sombre sticky ============ -->
-<nav class="fx-nav" id="mainNav">
-    <div class="fx-nav-inner">
-        <a href="#page-top"><img class="fx-nav-logo" src="assets/img/etf.png" alt="Exprime Ta Foi"/></a>
-        <div class="fx-nav-links">
-            <a href="#features">Fonctionnalités</a>
-            <a href="#communaute">Communauté</a>
-            <a href="#specs">Gratuit</a>
-            <a class="fx-nav-cta" href="#telecharger">Télécharger</a>
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Exprime Ta Foi, la Bible sociale : lire, partager et vivre la Parole ensemble, gratuitement et sans publicité."
+    />
+    <meta name="theme-color" content="#060606" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Exprime Ta Foi — La Bible sociale</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link
+      rel="preload"
+      href="assets/video/profil_compresse.mp4"
+      as="video"
+      type="video/mp4"
+    />
+    <link rel="stylesheet" href="css/landing.css" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <div class="nav-inner">
+        <a class="wordmark" href="#accueil" aria-label="Exprime Ta Foi, accueil"
+          ><span>ETF</span><small>Exprime Ta Foi</small></a
+        >
+        <div class="nav-links" id="nav-menu">
+          <a href="#experience">Expérience</a
+          ><a href="#fonctionnalites">Fonctionnalités</a
+          ><a href="#communaute">Communauté</a
+          ><a class="nav-download" href="#telecharger">Télécharger</a>
         </div>
-        <button class="fx-nav-burger" id="navBurger" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
-            <i class="bi-list"></i>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span><span></span>
         </button>
-    </div>
-    <div class="fx-nav-collapse" id="navMenu">
-        <a href="#features">Fonctionnalités</a>
-        <a href="#communaute">Communauté</a>
-        <a href="#specs">Gratuit</a>
-        <a href="#telecharger">Télécharger</a>
-    </div>
-</nav>
-
-<!-- ============ HERO : titre géant centré + visuel produit ============ -->
-<header class="fx-hero" id="logo">
-    <p class="fx-eyebrow" data-hero="0" data-reveal>Nouveau</p>
-    <h1 class="fx-hero-title" data-hero="1" data-reveal>
-        La Bible<br><span class="fx-gradient">sociale.</span>
-    </h1>
-    <p class="fx-hero-sub" data-hero="2" data-reveal>
-        La Parole se vit ensemble.
-        <span class="fx-verse-line"><span data-typing="« Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres. » — 1 Jean 4:11">"Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous aimer les uns les autres." — 1 Jean 4:11</span></span>
-    </p>
-    <div class="fx-hero-ctas" data-hero="3" data-reveal>
-        <a href="#telecharger" class="fx-link-cta">Télécharger <i class="bi-chevron-right"></i></a>
-        <a href="#features" class="fx-link-cta">En savoir plus <i class="bi-chevron-right"></i></a>
-    </div>
-    <div class="fx-hero-visual" data-parallax="0.06">
-        <div class="fx-phone">
-            <div class="fx-phone-notch"></div>
-            <video muted="muted" autoplay="" loop="" playsinline="">
-                <source src="assets/video/profil_compresse.mp4" type="video/mp4"/>
+      </div>
+    </nav>
+    <main id="contenu">
+      <header class="hero" id="accueil">
+        <div class="hero-aura" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="kicker hero-kicker">Une autre manière de lire.</p>
+          <h1>
+            <span>La Parole.</span><span class="hero-accent">Vivante.</span>
+          </h1>
+          <p class="hero-intro">
+            La Bible devient un lieu de partage, de réflexion et de communion.
+          </p>
+        </div>
+        <div
+          class="hero-stage"
+          aria-label="Aperçu de l’application Exprime Ta Foi"
+        >
+          <p class="hero-side hero-side-left hero-side-top" aria-hidden="true">
+            Méditer
+          </p>
+          <p class="hero-side hero-side-right hero-side-top" aria-hidden="true">
+            Encourager
+          </p>
+          <p
+            class="hero-side hero-side-left hero-side-bottom"
+            aria-hidden="true"
+          >
+            Communier
+          </p>
+          <p
+            class="hero-side hero-side-right hero-side-bottom"
+            aria-hidden="true"
+          >
+            Partager
+          </p>
+          <div class="phone phone-hero">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="assets/img/poster-profil.jpg"
+              aria-label="Navigation dans un profil Exprime Ta Foi"
+            >
+              <source
+                src="assets/video/profil_compresse.mp4"
+                type="video/mp4"
+              />
             </video>
+          </div>
         </div>
-    </div>
-</header>
+        <a class="scroll-cue" href="#experience"
+          ><span>Découvrir</span><i aria-hidden="true"></i
+        ></a>
+      </header>
 
-<!-- ============ SECTION 1 (claire) : présentation ============ -->
-<section class="fx-section fx-light" id="presentation">
-    <div class="fx-section-head">
-        <h2 class="fx-h2" data-reveal>Tirez le meilleur<br>de votre application.</h2>
-        <p class="fx-lead" data-reveal data-reveal-delay="120">
-            Un réseau social centré sur la Parole.
-            Partagez. Commentez. Grandissez.
+      <section class="belief" aria-labelledby="belief-title">
+        <p class="kicker reveal-copy">Pensée pour la communion</p>
+        <h2 id="belief-title" class="statement reveal-copy">
+          Votre lecture ne s’arrête plus à la dernière ligne.
+        </h2>
+        <p class="statement-note reveal-copy">
+          Elle se poursuit dans ce que vous soulignez, ce que vous transmettez
+          et ce que les autres vous inspirent.
         </p>
-    </div>
-    <div class="fx-visual-wide" data-parallax="0.05">
-        <video muted="muted" autoplay="" loop="" playsinline="">
-            <source src="assets/video/videopresentation.mp4" type="video/mp4"/>
-        </video>
-    </div>
-</section>
+      </section>
 
-<!-- ============ SECTION 2 (sombre) : communauté / tags ============ -->
-<section class="fx-section fx-dark" id="communaute">
-    <div class="fx-section-head">
-        <h2 class="fx-h2" data-reveal>Une communion 2.0.</h2>
-        <p class="fx-lead" data-reveal data-reveal-delay="120">
-            Surlignez vos versets. Créez vos tags.
-            Retrouvez toute votre communauté par thématique.
-        </p>
-    </div>
-    <div class="fx-visual-wide" data-parallax="0.05">
-        <img src="assets/img/hashtag-centered.png" alt="Tags Exprime Ta Foi"/>
-    </div>
-</section>
+      <section class="journey" id="experience" aria-labelledby="journey-title">
+        <div class="journey-sticky">
+          <div class="journey-glow" aria-hidden="true"></div>
+          <div class="journey-heading">
+            <p class="kicker">Une Bible qui vous accompagne</p>
+            <h2 id="journey-title">Un seul geste.<br />Plusieurs chemins.</h2>
+          </div>
+          <div class="journey-index" aria-label="Étapes de l’expérience">
+            <button
+              class="is-active"
+              type="button"
+              data-journey-target="read"
+              aria-pressed="true"
+            >
+              <span>01</span><small>Recevoir</small>
+            </button>
+            <button
+              type="button"
+              data-journey-target="mark"
+              aria-pressed="false"
+            >
+              <span>02</span><small>Approfondir</small>
+            </button>
+            <button
+              type="button"
+              data-journey-target="give"
+              aria-pressed="false"
+            >
+              <span>03</span><small>Transmettre</small>
+            </button>
+          </div>
+          <div class="journey-phone-wrap">
+            <div class="phone phone-journey">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <video
+                class="journey-video is-active"
+                data-screen="read"
+                autoplay
+                muted
+                loop
+                playsinline
+                poster="assets/img/poster-profil.jpg"
+                aria-label="Découvrir les publications de la communauté"
+              >
+                <source
+                  src="assets/video/profil_compresse.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <video
+                class="journey-video"
+                data-screen="mark"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="assets/img/poster-surligner.jpg"
+                aria-label="Surligner un passage dans l’application"
+              >
+                <source
+                  src="assets/video/surligner_compresse.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <video
+                class="journey-video"
+                data-screen="give"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="assets/img/poster-give.jpg"
+                aria-label="Soutenir une initiative dans l’application"
+              >
+                <source src="assets/video/give.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="journey-orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="journey-steps">
+            <article class="journey-step is-active" data-step="read">
+              <span>01</span>
+              <h3>Recevez.</h3>
+              <p>
+                Une lecture nourrie par les regards de toute une communauté.
+              </p>
+            </article>
+            <article class="journey-step" data-step="mark">
+              <span>02</span>
+              <h3>Approfondissez.</h3>
+              <p>
+                Surlignez, classez et retrouvez les passages qui vous parlent.
+              </p>
+            </article>
+            <article class="journey-step" data-step="give">
+              <span>03</span>
+              <h3>Transmettez.</h3>
+              <p>
+                Partagez une pensée, encouragez un talent, faites grandir un
+                projet.
+              </p>
+            </article>
+          </div>
+          <div class="journey-progress" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
 
-<!-- ============ SECTION 3 (claire) : fonctionnalités ============ -->
-<section class="fx-section fx-light" id="features">
-    <div class="fx-section-head">
-        <h2 class="fx-h2" data-reveal>Des outils pensés<br>pour ta vie spirituelle.</h2>
-    </div>
+      <section
+        class="chapters"
+        id="fonctionnalites"
+        aria-labelledby="chapters-title"
+      >
+        <div class="section-heading">
+          <p class="kicker reveal-copy">Tout part d’un verset</p>
+          <h2 id="chapters-title" class="reveal-copy">
+            Lisez avec<br />plus d’intention.
+          </h2>
+        </div>
+        <article class="chapter chapter-mark">
+          <div class="chapter-copy">
+            <p class="chapter-number">01 — Surligner</p>
+            <h3>Gardez ce qui<br />vous éclaire.</h3>
+            <p>
+              Marquez les versets phares et rassemblez-les par thèmes. Votre
+              parcours reste lisible, personnel et toujours à portée de main.
+            </p>
+            <div class="inline-tags" aria-label="Exemples de thèmes">
+              <span>#Espérance</span><span>#Grâce</span><span>#Partage</span>
+            </div>
+          </div>
+          <div class="chapter-art chapter-art-mark" aria-hidden="true">
+            <div class="verse-sheet">
+              <small>1 JEAN · 4</small>
+              <p>
+                Bien-aimés, si Dieu nous a ainsi aimés, nous devons aussi nous
+                aimer les uns les autres.
+              </p>
+              <mark>nous aimer les uns les autres.</mark>
+            </div>
+            <div class="chapter-device">
+              <img src="assets/img/surligner.png" alt="" loading="lazy" />
+            </div>
+          </div>
+        </article>
+        <article class="chapter chapter-share">
+          <div class="chapter-copy">
+            <p class="chapter-number">02 — Échanger</p>
+            <h3>Une pensée peut<br />en éveiller mille.</h3>
+            <p>
+              Commentez un passage, partagez ce qu’il change en vous et
+              découvrez les réponses qui résonnent avec votre chemin.
+            </p>
+          </div>
+          <div
+            class="conversation"
+            aria-label="Exemple de conversation dans la communauté"
+          >
+            <div class="message message-one">
+              <span class="avatar avatar-one">M</span>
+              <p>
+                <strong>Mélissa</strong>Ce passage m’aide à choisir la paix,
+                aujourd’hui.
+              </p>
+              <small>42 personnes encouragées</small>
+            </div>
+            <div class="message message-two">
+              <span class="avatar avatar-two">J</span>
+              <p>
+                <strong>Jonathan</strong>Merci pour ce partage. Il arrive au bon
+                moment.
+              </p>
+            </div>
+            <div class="message message-three">
+              <span class="avatar avatar-three">S</span>
+              <p><strong>Sarah</strong>Amen. Nous avançons ensemble.</p>
+            </div>
+          </div>
+        </article>
+        <article class="chapter chapter-follow">
+          <div class="chapter-copy">
+            <p class="chapter-number">03 — Se retrouver</p>
+            <h3>La foi n’a pas<br />de frontière.</h3>
+            <p>
+              Suivez les voix qui vous inspirent. Retrouvez votre communauté
+              autour d’une parole, d’un thème ou d’un projet.
+            </p>
+          </div>
+          <div class="community-portrait" aria-hidden="true">
+            <img src="assets/img/communion2.jpg" alt="" loading="lazy" />
+            <div class="floating-label label-one">#Communion</div>
+            <div class="floating-label label-two">#GrandirEnsemble</div>
+            <div class="floating-label label-three">#LaParole</div>
+          </div>
+        </article>
+      </section>
 
-    <div class="fx-feature">
-        <div class="fx-feature-copy" data-reveal>
-            <h3>Surligner.</h3>
-            <p>Explorez les passages par thématique. Marquez vos versets “phare”.</p>
-            <span class="fx-tags">#Partage #Exhortation</span>
+      <section class="reels" id="demonstration" aria-labelledby="reels-title">
+        <div class="reels-intro">
+          <p class="kicker reveal-copy">Exprime Ta Foi en mouvement</p>
+          <h2 id="reels-title" class="reveal-copy">
+            L’application.<br />En histoires.
+          </h2>
+          <p class="reels-lead reveal-copy">
+            Six formats courts pour découvrir les gestes, les rencontres et les
+            idées qui donnent vie à la communauté.
+          </p>
         </div>
-        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
-            <img src="assets/img/surligner.png" alt="Surligner"/>
+        <div class="reels-window">
+          <div class="reels-aura" aria-hidden="true"></div>
+          <div class="reels-track">
+            <article
+              class="reel is-active"
+              data-reel-index="0"
+              data-reel-title="Commenter, c’est prolonger la lecture."
+            >
+              <button
+                class="reel-card"
+                type="button"
+                aria-label="Lire la vidéo : Commenter, c’est prolonger la lecture"
+              >
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  poster="assets/video/insta/web/commentaire.webp"
+                >
+                  <source
+                    src="assets/video/insta/web/commentaire.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <span class="reel-shade"></span
+                ><span class="reel-number">01</span
+                ><span class="reel-play" aria-hidden="true"></span>
+              </button>
+            </article>
+            <article
+              class="reel is-next"
+              data-reel-index="1"
+              data-reel-title="Un profil qui vous ressemble."
+            >
+              <button
+                class="reel-card"
+                type="button"
+                aria-label="Lire la vidéo : créer sa photo de profil"
+              >
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  poster="assets/video/insta/web/photo-profil.webp"
+                >
+                  <source
+                    src="assets/video/insta/web/photo-profil.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <span class="reel-shade"></span
+                ><span class="reel-number">02</span
+                ><span class="reel-play" aria-hidden="true"></span>
+              </button>
+            </article>
+            <article
+              class="reel is-hidden"
+              data-reel-index="2"
+              data-reel-title="Les tags ouvrent de nouveaux chemins."
+            >
+              <button
+                class="reel-card"
+                type="button"
+                aria-label="Lire la vidéo : découvrir les tags"
+              >
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  poster="assets/video/insta/web/tags-episode.webp"
+                >
+                  <source
+                    src="assets/video/insta/web/tags-episode.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <span class="reel-shade"></span
+                ><span class="reel-number">03</span
+                ><span class="reel-play" aria-hidden="true"></span>
+              </button>
+            </article>
+            <article
+              class="reel is-hidden"
+              data-reel-index="3"
+              data-reel-title="Suivre les voix qui nous inspirent."
+            >
+              <button
+                class="reel-card"
+                type="button"
+                aria-label="Lire la vidéo : comprendre les abonnements"
+              >
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  poster="assets/video/insta/web/abonnes.webp"
+                >
+                  <source
+                    src="assets/video/insta/web/abonnes.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <span class="reel-shade"></span
+                ><span class="reel-number">04</span
+                ><span class="reel-play" aria-hidden="true"></span>
+              </button>
+            </article>
+            <article
+              class="reel is-hidden"
+              data-reel-index="4"
+              data-reel-title="Une page pour se présenter autrement."
+            >
+              <button
+                class="reel-card"
+                type="button"
+                aria-label="Lire la vidéo : découvrir la page de profil"
+              >
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  poster="assets/video/insta/web/page-profil.webp"
+                >
+                  <source
+                    src="assets/video/insta/web/page-profil.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <span class="reel-shade"></span
+                ><span class="reel-number">05</span
+                ><span class="reel-play" aria-hidden="true"></span>
+              </button>
+            </article>
+            <article
+              class="reel is-prev"
+              data-reel-index="5"
+              data-reel-title="Retrouver ce qui compte, simplement."
+            >
+              <button
+                class="reel-card"
+                type="button"
+                aria-label="Lire la vidéo : utiliser un tag"
+              >
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  poster="assets/video/insta/web/tags.webp"
+                >
+                  <source
+                    src="assets/video/insta/web/tags.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <span class="reel-shade"></span
+                ><span class="reel-number">06</span
+                ><span class="reel-play" aria-hidden="true"></span>
+              </button>
+            </article>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="fx-feature fx-flip">
-        <div class="fx-feature-copy" data-reveal>
-            <h3>Utiliser les tags.</h3>
-            <p>Organisez votre lecture. Suivez les tendances du moment.</p>
-            <span class="fx-tags">#Communaute #Parole #Croissance</span>
+      <section class="human" id="communaute" aria-labelledby="human-title">
+        <div class="human-copy">
+          <p class="kicker reveal-copy">Une expérience profondément humaine</p>
+          <h2 id="human-title" class="reveal-copy">
+            Ce qui nous relie<br />nous fait grandir.
+          </h2>
         </div>
-        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
-            <img src="assets/img/hashtag.png" alt="Tags"/>
+        <div class="human-canvas">
+          <figure class="human-photo human-photo-main">
+            <img
+              src="assets/img/oeuvrerEnsemble.jpg"
+              alt="Des personnes réunies et souriantes"
+              loading="lazy"
+            />
+            <figcaption>Œuvrer ensemble</figcaption>
+          </figure>
+          <figure class="human-photo human-photo-small">
+            <img
+              src="assets/img/woman.jpg"
+              alt="Une femme souriante"
+              loading="lazy"
+            />
+            <figcaption>Partager librement</figcaption>
+          </figure>
+          <blockquote>
+            « Là où deux ou trois sont assemblés en mon nom, je suis au milieu
+            d’eux. »<cite>Matthieu 18:20</cite>
+          </blockquote>
+          <div class="human-word" aria-hidden="true">ENSEMBLE</div>
         </div>
-    </div>
+      </section>
 
-    <div class="fx-feature">
-        <div class="fx-feature-copy" data-reveal>
-            <h3>Commenter. Liker.</h3>
-            <p>Partagez une pensée inspirée. Mettez en valeur les réponses qui vous touchent.</p>
-            <span class="fx-tags">#Communion #Amour #LaParole</span>
+      <section class="promise" aria-labelledby="promise-title">
+        <div class="promise-inner">
+          <p class="kicker">Une liberté essentielle</p>
+          <h2 id="promise-title">
+            0 €.<br />0 pub.<br /><span
+              >100 % tournée<br />vers l’essentiel.</span
+            >
+          </h2>
+          <p>
+            Exprime Ta Foi est gratuite et sans publicité. Parce que la
+            communion ne devrait jamais dépendre d’un abonnement.
+          </p>
         </div>
-        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
-            <img src="assets/img/commenter.png" alt="Commenter"/>
-        </div>
-    </div>
+      </section>
 
-    <div class="fx-feature fx-flip">
-        <div class="fx-feature-copy" data-reveal>
-            <h3>S'abonner.</h3>
-            <p>Du voisin au bout du monde : la communion fraternelle sans frontière.</p>
-            <span class="fx-tags">#JésusNotreSource #PlanDeDieu</span>
+      <section
+        class="download"
+        id="telecharger"
+        aria-labelledby="download-title"
+      >
+        <div class="download-aura" aria-hidden="true"></div>
+        <div class="download-copy">
+          <p class="kicker">Disponible maintenant</p>
+          <h2 id="download-title">
+            Emportez la Parole.<br /><span>Partout.</span>
+          </h2>
+          <p>Scannez. Téléchargez. Rejoignez la communion.</p>
+          <div class="store-links">
+            <a
+              href="https://apps.apple.com/app/id6459265531"
+              aria-label="Télécharger Exprime Ta Foi sur l’App Store"
+              ><img
+                src="assets/img/app-store-badge.svg"
+                alt="Disponible sur l’App Store"/></a
+            ><a
+              href="https://play.google.com/store/apps/details?id=com.exprimetafoi.exprimetafoi"
+              aria-label="Télécharger Exprime Ta Foi sur Google Play"
+              ><img
+                src="assets/img/google-play-badge.svg"
+                alt="Disponible sur Google Play"
+            /></a>
+          </div>
+          <a
+            class="qr-card"
+            href="app/"
+            aria-label="Scanner le QR code pour télécharger Exprime Ta Foi"
+          >
+            <img
+              src="assets/img/qrcode.png"
+              alt="QR code de téléchargement Exprime Ta Foi"
+            />
+            <span>Scannez avec<br />votre téléphone</span>
+          </a>
         </div>
-        <div class="fx-feature-media" data-reveal data-reveal-delay="120">
-            <img src="assets/img/abonner.png" alt="S'abonner"/>
+        <div class="download-stage">
+          <div class="download-phone phone">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="assets/img/poster-give.jpg"
+              aria-label="Exprime Ta Foi sur téléphone"
+            >
+              <source src="assets/video/give.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-    </div>
-
-    <div class="fx-visual-device" data-parallax="0.04">
-        <video muted="muted" autoplay="" loop="" playsinline="">
-            <source src="assets/video/surligner_compresse.mp4" type="video/mp4"/>
-        </video>
-    </div>
-</section>
-
-<!-- ============ SECTION SPECS (sombre) : grille chiffres ============ -->
-<section class="fx-section fx-dark" id="specs">
-    <div class="fx-section-head">
-        <h2 class="fx-h2" data-reveal>Gratuit. Sans pub.<br>Pour tous.</h2>
-        <p class="fx-lead" data-reveal data-reveal-delay="120">Stimuler la foi et la créativité de la communauté, partout dans le monde.</p>
-    </div>
-    <div class="fx-specs">
-        <div class="fx-spec" data-reveal>
-            <div class="fx-spec-value">0 €</div>
-            <div class="fx-spec-label">Gratuit, vraiment</div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark" href="#accueil"
+          ><span>ETF</span><small>Exprime Ta Foi</small></a
+        >
+        <p>La Parole se vit ensemble.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about-us.html">À propos</a
+        ><a href="https://forms.gle/pgXW2Fsm3nSXPL2AA">Bénévolat</a
+        ><a
+          href="https://www.helloasso.com/associations/exprime-ta-foi/collectes/lancement-de-la-start-up-exprimetafoi"
+          >Faire un don</a
+        ><a href="ETF_CGU.html">CGU</a
+        ><a href="ETF_Politique_de_confidentialite.html">Confidentialité</a
+        ><a href="mailto:contact@exprimetafoi.com">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Exprime Ta Foi</p>
+        <div>
+          <a href="https://www.instagram.com/exprimetafoi/">Instagram</a
+          ><a href="https://www.youtube.com/@exprimetafoi2943">YouTube</a
+          ><a href="https://www.facebook.com/exprimetafoi">Facebook</a>
         </div>
-        <div class="fx-spec" data-reveal data-reveal-delay="100">
-            <div class="fx-spec-value">0 pub</div>
-            <div class="fx-spec-label">Ni traceurs, ni distraction</div>
-        </div>
-        <div class="fx-spec" data-reveal data-reveal-delay="200">
-            <div class="fx-spec-value">2</div>
-            <div class="fx-spec-label">Plateformes : iOS & Android</div>
-        </div>
-        <div class="fx-spec" data-reveal data-reveal-delay="300">
-            <div class="fx-spec-value">∞</div>
-            <div class="fx-spec-label">Communion sans frontière</div>
-        </div>
-    </div>
-    <div class="fx-vision" data-reveal data-reveal-delay="150">
-        <div><img src="assets/img/communion2.jpg" alt=""/><h3>Communion fraternelle</h3><p>Vivante et centrée sur la Parole.</p></div>
-        <div><img src="assets/img/oeuvrerEnsemble.jpg" alt=""/><h3>Talents émergents</h3><p>L'expression créative de la foi encouragée.</p></div>
-        <div><img src="assets/img/corporate-goals.jpg" alt=""/><h3>Donner &amp; recevoir</h3><p>Semer, et être une source de bénédictions.</p></div>
-        <div><img src="assets/img/woman.jpg" alt=""/><h3>Grandir ensemble</h3><p>Une communauté soudée par la Parole.</p></div>
-    </div>
-</section>
-
-<!-- ============ CTA FINAL (sombre) ============ -->
-<section class="fx-final" id="telecharger">
-    <h2 class="fx-final-title" data-reveal>Téléchargez ETF.</h2>
-    <p class="fx-final-sub" data-reveal data-reveal-delay="100">Disponible maintenant sur votre téléphone.</p>
-    <div class="fx-final-badges" data-reveal data-reveal-delay="200">
-        <a href="https://play.google.com/store/apps/details?id=com.exprimetafoi.exprimetafoi"><img class="fx-store-badge" src="assets/img/google-play-badge.svg" alt="Google Play"/></a>
-        <a href="https://apps.apple.com/app/id6459265531"><img class="fx-store-badge" src="assets/img/app-store-badge.svg" alt="App Store"/></a>
-    </div>
-    <div class="fx-final-qr" data-reveal data-reveal-delay="300">
-        <img src="assets/img/qrcode.png" alt="QR code de téléchargement"/>
-        <p>Scannez pour télécharger</p>
-    </div>
-</section>
-
-<!-- ============ FOOTER fin ============ -->
-<footer class="fx-footer">
-    <div class="fx-footer-inner">
-        <div class="fx-footer-links">
-            <a href="about-us.html">À propos</a>
-            <a href="https://forms.gle/pgXW2Fsm3nSXPL2AA">Bénévolat</a>
-            <a href="https://www.helloasso.com/associations/exprime-ta-foi/collectes/lancement-de-la-start-up-exprimetafoi">Faire un don</a>
-            <a href="ETF_CGU.html">CGU</a>
-            <a href="ETF_Politique_de_confidentialite.html">Confidentialité</a>
-            <a href="mailto:contact@exprimetafoi.com">Contact</a>
-        </div>
-        <div class="fx-footer-social">
-            <a href="https://www.facebook.com/exprimetafoi" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/exprimetafoi/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://twitter.com/exprimetafoi/" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.youtube.com/@exprimetafoi2943" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        </div>
-        <p class="fx-footer-note">Vivre une nouvelle communion avec Dieu et avec les Hommes au travers de Jésus-Christ.</p>
-        <p class="fx-footer-copy">Copyright © 2024 Exprime Ta Foi. Tous droits réservés.</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="js/landing-effects.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYXM8TF1DF"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-NYXM8TF1DF');
-</script>
-</body>
+      </div>
+    </footer>
+    <script defer src="js/vendor/gsap.min.js"></script>
+    <script defer src="js/vendor/ScrollTrigger.min.js"></script>
+    <script defer src="js/landing-effects.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NYXM8TF1DF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-NYXM8TF1DF");
+    </script>
+  </body>
 </html>
