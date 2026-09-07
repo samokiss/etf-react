@@ -116,6 +116,14 @@ body.index-fx p { margin: 0; }
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* Les mots découpés par GSAP portent le dégradé individuellement */
+.fx-gradient .fx-word, .fx-word.fx-gradient {
+  background: linear-gradient(94deg, #ffb4a6 0%, var(--brand) 60%, #ff6b3d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fx-word { display: inline-block; will-change: transform; }
 .fx-hero-sub {
   font-size: clamp(19px, 3vw, 26px);
   font-weight: 500;
@@ -415,4 +423,5 @@ html.fx [data-reveal].is-in { opacity: 1; transform: none; }
   html.fx [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
   .fx-cursor { animation: none; }
   .fx-store-badge:hover { transform: none; }
+  .fx-word { display: inline; }
 }
