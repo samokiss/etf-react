@@ -79,6 +79,7 @@ body.index-fx p { margin: 0; }
   background: var(--ink-nav);
   padding: 8px 28px 22px;
 }
+.fx-nav-collapse.is-closed { display: none; }
 .fx-nav-collapse a {
   color: rgba(255, 255, 255, 0.85);
   font-size: 17px;

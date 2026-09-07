@@ -9,9 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <!-- Bootstrap limité à la navbar mobile -->
-    <link href="css/styles.css" rel="stylesheet"/>
-    <!-- Clone Apple (index.html uniquement) -->
+    <!-- 100% dédié landing (zéro Bootstrap) : index.html uniquement -->
     <link href="css/landing.css" rel="stylesheet"/>
 </head>
 <body id="page-top" class="index-fx">
@@ -26,11 +24,11 @@
             <a href="#specs">Gratuit</a>
             <a class="fx-nav-cta" href="#telecharger">Télécharger</a>
         </div>
-        <button class="fx-nav-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Menu">
+        <button class="fx-nav-burger" id="navBurger" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
             <i class="bi-list"></i>
         </button>
     </div>
-    <div class="collapse fx-nav-collapse" id="navbarResponsive">
+    <div class="fx-nav-collapse" id="navMenu">
         <a href="#features">Fonctionnalités</a>
         <a href="#communaute">Communauté</a>
         <a href="#specs">Gratuit</a>
@@ -217,7 +215,6 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/landing-effects.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYXM8TF1DF"></script>
 <script>

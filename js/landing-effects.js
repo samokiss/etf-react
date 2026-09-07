@@ -12,6 +12,25 @@
   // Autorise les états cachés CSS (reveal) uniquement quand le JS tourne.
   document.documentElement.classList.add('fx');
 
+  /* ---------- 0. Burger mobile (sans dépendance) ---------- */
+  var burger = document.getElementById('navBurger');
+  var menu = document.getElementById('navMenu');
+  if (burger && menu) {
+    menu.classList.add('is-closed');
+    burger.addEventListener('click', function () {
+      var open = menu.classList.toggle('is-closed') === false;
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.innerHTML = open ? '<i class="bi-x-lg"></i>' : '<i class="bi-list"></i>';
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menu.classList.add('is-closed');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.innerHTML = '<i class="bi-list"></i>';
+      });
+    });
+  }
+
   /* ---------- 1. Reveal au scroll (IntersectionObserver) ---------- */
   var revealEls = document.querySelectorAll('[data-reveal]');
   if ('IntersectionObserver' in window) {
