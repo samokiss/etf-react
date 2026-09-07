@@ -1,0 +1,150 @@
+/* ==========================================================================
+   landing.css — Restyle Apple MacBook Neo de index.html UNIQUEMENT.
+   Chargé APRÈS styles.css / customedstyle.css / footer.css : on surcharge,
+   on ne modifie jamais les CSS partagés (about-us, CGU...).
+   Fallback sans JS : le contenu est visible par défaut. Les états cachés
+   (reveal) ne s'appliquent que si <html> porte la classe `fx` (ajoutée par JS).
+   ========================================================================== */
+
+:root {
+  --fx-ink: #0b1626;
+  --fx-ink-soft: #101e33;
+  --fx-paper: #f5f5f7;
+  --fx-text: #1d1d1f;
+  --fx-muted: #6e6e73;
+  --fx-light: #f5f5f7;
+  --fx-light-muted: #a1a1a6;
+  --fx-accent: #d9442f;
+  --fx-accent-warm: #e8735f;
+}
+
+html { scroll-behavior: smooth; }
+
+/* ---------- NAV : verre dépoli sombre ---------- */
+body#index-fx #mainNav {
+  background: rgba(11, 22, 38, 0.72) !important;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: none !important;
+}
+body#index-fx #mainNav .nav-link { color: var(--fx-light-muted) !important; }
+body#index-fx #mainNav .nav-link:hover { color: #fff !important; }
+body#index-fx #mainNav .navbar-toggler { color: #fff; border-color: rgba(255,255,255,0.3); }
+
+/* ---------- HERO : plein écran, bleu nuit, typo géante ---------- */
+body#index-fx #logo.masthead {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(56, 97, 158, 0.35), transparent 60%),
+    radial-gradient(900px 700px at 10% 110%, rgba(217, 68, 47, 0.16), transparent 60%),
+    linear-gradient(180deg, #0d1b30 0%, var(--fx-ink) 100%);
+  color: var(--fx-light);
+  padding: 120px 0 60px;
+  overflow: hidden;
+}
+body#index-fx #logo .display-4 {
+  font-size: clamp(44px, 7vw, 88px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+body#index-fx #logo .lead { color: var(--fx-light-muted) !important; font-size: clamp(16px, 2vw, 20px); }
+body#index-fx #logo .front { color: var(--fx-accent-warm); font-weight: 600; }
+body#index-fx #logo .verse {
+  display: block;
+  margin-top: 22px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--fx-accent);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0 16px 16px 0;
+  color: var(--fx-light);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.fx-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: var(--fx-accent-warm);
+  vertical-align: -0.15em;
+  margin-left: 2px;
+  animation: fxBlink 0.9s steps(1) infinite;
+}
+@keyframes fxBlink { 50% { opacity: 0; } }
+
+/* Badge "Gratuit · Sans pub" */
+.fx-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #ffd9d2;
+  background: rgba(217, 68, 47, 0.22);
+  border: 1px solid rgba(217, 68, 47, 0.45);
+  border-radius: 980px;
+  padding: 6px 16px;
+  margin-bottom: 24px;
+}
+
+/* Device mockup : ombres profondes, halo */
+body#index-fx .masthead-device-mockup .device,
+body#index-fx .features-device-mockup .device {
+  filter: drop-shadow(0 40px 70px rgba(0, 0, 0, 0.5));
+}
+
+/* ---------- BANDE DOWNLOAD : sombre ---------- */
+body#index-fx #download.bg-gradient-primary-to-secondary {
+  background: linear-gradient(180deg, var(--fx-ink-soft) 0%, var(--fx-ink) 100%) !important;
+}
+body#index-fx #download h2 {
+  font-size: clamp(22px, 3.2vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- SECTIONS CLAIRES ---------- */
+body#index-fx section.bg-light { background: var(--fx-paper) !important; }
+body#index-fx section { padding-top: 90px; padding-bottom: 90px; }
+body#index-fx .display-5 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+}
+body#index-fx .front { color: var(--fx-accent); font-weight: 600; }
+body#index-fx .hashtag { color: var(--fx-accent); font-weight: 600; }
+body#index-fx #communion img,
+body#index-fx #presentation video {
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(11, 22, 38, 0.16);
+}
+
+/* Phone épinglé pendant la section features (desktop) */
+@media (min-width: 992px) {
+  body#index-fx #features .features-device-mockup {
+    position: sticky;
+    top: 15vh;
+  }
+}
+
+/* ---------- REVEAL (uniquement si JS actif : html.fx) ---------- */
+html.fx [data-reveal] {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+html.fx [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- REDUCED MOTION ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  html.fx [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .fx-cursor { animation: none; }
+}
