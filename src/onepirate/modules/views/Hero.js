@@ -1,16 +1,33 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { gsap, animationsDisabled } from '../animations';
 
 const VERSE = '« Je puis tout par celui qui me fortifie. »';
 const VERSE_REF = 'Philippiens 4:13';
 
 function Hero() {
   const [typed, setTyped] = useState('');
+  const textRef = useRef(null);
   const phoneRef = useRef(null);
   const rafRef = useRef(null);
 
+  // Entrée cinématique du hero (timeline GSAP)
+  useEffect(() => {
+    if (animationsDisabled()) return undefined;
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      tl.from('.hero__badge', { autoAlpha: 0, y: 20, duration: 0.6 })
+        .from('.hero__title', { autoAlpha: 0, y: 44, duration: 0.9 }, '-=0.25')
+        .from('.hero__sub', { autoAlpha: 0, y: 30, duration: 0.7 }, '-=0.5')
+        .from('.hero__ctas .btn', { autoAlpha: 0, y: 24, duration: 0.6, stagger: 0.12 }, '-=0.4')
+        .from('.hero__phone', { autoAlpha: 0, y: 90, scale: 0.9, rotateY: -18, duration: 1.1, clearProps: 'transform' }, 0.4);
+    });
+    return () => ctx.revert();
+  }, []);
+
   // Typing effect (désactivé si prefers-reduced-motion)
   useEffect(() => {
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      || /HeadlessChrome/.test(window.navigator.userAgent);
     if (reduced) {
       setTyped(VERSE);
       return undefined;
@@ -48,7 +65,7 @@ function Hero() {
   return (
     <header className="hero" id="top">
       <div className="hero__inner">
-        <div>
+        <div ref={textRef}>
           <span className="hero__badge">Gratuit · Sans pub</span>
           <h1 className="hero__title">
             Exprime <em>ta foi.</em>
