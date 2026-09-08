@@ -464,14 +464,6 @@
       ease: "power4.out",
       scrollTrigger: { trigger: ".download", start: "top 70%" }
     });
-    gsap.from(".qr-card", {
-      opacity: 0,
-      scale: 0.75,
-      duration: 0.9,
-      ease: "back.out(1.4)",
-      scrollTrigger: { trigger: ".download", start: "top 48%" }
-    });
-
     mm.add("(max-width: 680px)", function() {
       gsap.set(".hero-side", { clearProps: "all" });
       gsap.to(".download-phone", {
